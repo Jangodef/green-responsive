@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  display: block;
+  align-items: center;
+}
+
+body {
+  background-image: url(images/bulb800.png);
+  background-color: #544d47;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  background-color: #fff;
+  /* Changing the max-width: 50vw to max-width: 70vw 
+  I get better responsive display for the smallest devices 
+  which is the iPhone SE  and the Galaxy S8+ 
+  which it's 360 the minimun width*/
+  max-width: 50vw;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 10em;
+  border-radius: 10px;
+  display: block;
+}
+
+li,
+a {
+  font-family: "Paytone One", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(18, 18, 66);
+  text-decoration: none;
+}
+
+br {
+  color: grey;
+  border: solid 2px;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding-top: 1em;
+  padding-right: 1em;
+  max-width: 100%;
+}
+.nav-links li a {
+  transition: all 0.4s ease 0s;
+}
+.nav-links li a:hover {
+  color: #a5d40b;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 1em;
+}
+.ht {
+  border: solid 2px;
+  border-color: grey;
+  max-width: 100%;
+}
+main {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.services p {
+  padding-top: 1em;
+  padding-bottom: 3.5em;
+}
+.services img {
+  max-width: 100%;
+  border-radius: 10px;
+  float: right;
+  clear: both;
+  overflow: hidden;
+  margin-left: 1em;
+}
+.services h1 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.services h2 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding-top: 6em;
+}
+
+button {
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  padding: 0.5em 4.5em;
+}
+.container {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+button:hover {
+  background-color: orange;
+  transition: all 0.8s ease 0s;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  clear: both;
+
+  margin-top: 1em;
+  border: solid lightblue 2px;
+  border-left: solid lightblue 7px;
+  background-color: rgba(196, 227, 236, 0.1);
+  margin-left: 1em;
+  margin-right: 1em;
+  max-width: 100%;
+}
+h3 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: normal;
+  padding: 1em;
+}
+.box p {
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+/*.box img {
+  margin: 1em;
+  /*max-width: auto;
+}*/
+
+.form {
+  background-color: rgb(150, 212, 209);
+  margin-top: 10em;
+  margin-bottom: 3em;
+  padding: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.form h1 {
+  text-align: center;
+  padding-bottom: 2em;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+label {
+  display: block;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 1em 1.25em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"],
+[type="reset"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: rgb(243, 108, 18);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+footer p {
+  text-align: center;
+  padding: 1.5em;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 651px) {
+  .wrapper {
+    max-width: 85vw;
+    h1,
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
+    .nav-links li {
+      font-size: 0.3rem;
+      padding: 0rem;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    max-width: 70vw;
+    h1,
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
+    .nav-links li {
+      font-size: 0.3rem;
+      padding: 0rem;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .wrapper {
+    max-width: 90vw;
+    h1,
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
+    .nav-links li {
+      font-size: 0.3rem;
+      padding: 0rem;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
